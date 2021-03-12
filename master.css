@@ -1,0 +1,79 @@
+*   {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+a {
+	text-decoration: none;
+}
+.navbar {
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: 0 auto;
+	padding: 15px 50px;
+	background-color: #f1f0f0;
+}
+.nav-left {
+	align-content: flex-start;
+	display: flex;
+	align-items: center;
+}
+.nav-right {
+	align-content: flex-end;
+
+	color: #aaa;
+	display: flex;
+	align-items: center;
+}
+.nav-left li, .nav-right li {
+	display: inline-block;
+	padding: 0 10px;
+}
+.nav-left li img {
+	width: 30px;
+	vertical-align: middle;
+}
+.main-link {
+	font-weight: bold;
+	color: #000;
+}
+.default-link {
+	color: #aaa;
+}
+.btn-download, .btn-login {
+	padding: 5px 10px;
+}
+.btn-login {
+	background-color: #ccc;
+	border-radius: 10px;
+	color: #000;
+}
+.btn-download {
+	background-color: #000;
+	color: #fff;
+	border-radius: 10px;
+}
+.nav-right span:hover{
+	color: #000;
+
+}
+.nav-right li {
+	position: relative;
+}
+.nav-drop {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	width: 100px;
+	height: 70px;
+	box-shadow: 2px 2px 5px #aaa;
+	z-index: 1;
+}
+.active {
+	display: flex;
+}
