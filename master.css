@@ -67,6 +67,7 @@ a {
 .nav-right li {
 	position: relative;
 	padding: 5px 15px;
+
 }
 .nav-right li .li-title:hover {
 	color: #d6d1d1;
@@ -80,11 +81,20 @@ a {
 	display: none;
 	position: absolute;
 	background-color: #fff;
-	color: #777;
+	border-radius: 10px;
+	color: #999;
 	box-shadow: 2px 2px 5px #cccccc;
 	z-index: 1;
-	padding: 20px 30px;
-	justify-content: space-between;
+	padding: 20px 0;
+	width: 800px;
+
+}
+.auto {
+	width: 200px;
+
+}
+.auto ul li {
+	width: 100%;
 }
 .nav-drop  * {
 	font-size: 14px;
@@ -94,15 +104,48 @@ a {
 }
 .nav-drop .div-content ul li {
 	list-style: none;
+	display: block;
 
 }
 .li-title {
 	color: #d6d1d1;
 	text-transform: uppercase;
-
 }
 .div-content {
-	padding: 0 15px;
-	display: flex;
-
+	width: 25%;
+	justify-content: center;
+}
+.prossimamente {
+	color: #ccc;
+}
+.prossimamente:hover {
+	color: #ccc!important;
+	cursor: default!important;
+}
+.prossimamente:before {
+	position: absolute;
+	right: 0;
+	top: -1px;
+	font-size: 8px;
+	color: #2c2cbe;
+	text-transform: uppercase;
+	font-weight: bold;
+	content: "Prossimamente";
+}
+.mini {
+	color: #ccc;
+}
+.mini:before {
+	position: absolute;
+	left: 55px;
+	top: -1px;
+	font-size: 8px;
+	color: #2c2cbe;
+	text-transform: uppercase;
+	font-weight: bold;
+	content: "Prossimamente";
+}
+.mini:hover {
+	color: #ccc!important;
+	cursor: default!important;
 }
